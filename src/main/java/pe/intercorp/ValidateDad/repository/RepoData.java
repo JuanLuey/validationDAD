@@ -86,7 +86,7 @@ public class RepoData {
                         WHERE X.PRD_LVL_NUMBER = P.PRD_LVL_NUMBER)
                         AND NOT (P.COD_BAR = '0' AND P.COD_EST = 0)
                         AND LENGTH(P.COD_BAR) = 13
-                        AND P.FEC_CRE BETWEEN TO_DATE('20240301','YYYYMMDD')
+                        AND P.FEC_CRE BETWEEN TO_DATE('20200101','YYYYMMDD')
                         AND TRUNC(SYSDATE)
                             """;
         result = jdbcTemplate.query(query,
