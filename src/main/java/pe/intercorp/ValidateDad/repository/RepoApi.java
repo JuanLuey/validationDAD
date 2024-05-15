@@ -7,8 +7,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 
 import java.io.IOException;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 import okhttp3.MediaType;
