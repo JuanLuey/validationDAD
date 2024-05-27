@@ -70,6 +70,11 @@ public class RepoData {
 
     public List<Sku> getSkus() {
         /// Se filtró la data con lo procesado hoy
+        String s_del = """
+                DELETE FROM EINTERFACE.IFH_SKU_STG_DAD
+                WHERE STATUS=999
+                AND DOWNLOAD_DATE IS NOT NULL """;
+        jdbcTemplate.update(s_del);
 
         List<Sku> result = null;
 
