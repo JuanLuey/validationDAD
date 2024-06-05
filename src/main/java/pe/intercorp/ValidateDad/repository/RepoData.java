@@ -91,7 +91,7 @@ public class RepoData {
                 AND NOT (P.COD_BAR = '0' AND P.COD_EST = 0)
                 AND LENGTH(P.COD_BAR) = 13
                 AND P.FEC_CRE BETWEEN TO_DATE('20190101','YYYYMMDD')
-                AND TRUNC(SYSDATE)
+                AND TRUNC(SYSDATE-1)
                     """;
         result = jdbcTemplate.query(query,
                 new Object[] {},

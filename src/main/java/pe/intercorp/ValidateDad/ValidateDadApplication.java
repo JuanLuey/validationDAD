@@ -124,7 +124,7 @@ public class ValidateDadApplication implements CommandLineRunner {
 							log.info("Insert SKU STG : OK {}", sku);
 						} else {
 							repoData.insert_sku_stg(sku, marca, codbar);
-							log.info("Insert SKU STG : Enviar archivo al DAD {}", sku);
+							log.info("Insert SKU STG : Enviar archivo al DAD {}", sku + " - " + status);
 						}
 
 					} catch (InterruptedException e) {
